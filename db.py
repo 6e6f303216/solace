@@ -22,7 +22,6 @@ def init_db():
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
 
-    # Таблица авторизации пользователей
     c.execute('''
         CREATE TABLE IF NOT EXISTS auth (
             user_id INTEGER PRIMARY KEY,
